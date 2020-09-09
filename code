@@ -1,0 +1,16 @@
+int* compareTriplets(int a_count, int* a, int b_count, int* b, int* result_count) {
+    *result_count=2;
+    int *solv = (int*)malloc(2*sizeof(int));
+    memset(&solv[0], 0 , sizeof(int)*2);    
+    
+for(int i=0;i<a_count;i++){
+
+    if(*(a+i)>*(b+i)) solv[0]++;
+    
+    else if(a[i]<*(b+i))solv[1]++;  
+
+    else continue;
+    }
+   
+    return solv;
+}
