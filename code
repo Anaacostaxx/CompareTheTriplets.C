@@ -7,7 +7,7 @@ for(int i=0;i<a_count;i++){
 
     if(*(a+i)>*(b+i)) solv[0]++;
     
-    else if(a[i]<*(b+i))solv[1]++;  
+    else if(*(a+i)<*(b+i))solv[1]++;  // a[i] is equivalent to *(a+i)
 
     else continue;
     }
